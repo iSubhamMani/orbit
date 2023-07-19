@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    display: flex;
+    flex-direction: column;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    background-color: #0d0d0d;
+    height: 70vh;
+}
+
+.hero nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 32px max(1em, 10vw);
+}
+
+.hero nav .ext-links{
+    display: flex;
+    align-items: center;
+}
+
+.hero nav .hero-logo{
+    font-size: clamp(1rem, 3rem, 4rem);
+    color: #fff;
+    font-weight: 700;
+}
+
+.hero nav .ext-links{
+    gap: 4em;
+}
+
+.hero nav .ext-links .nav-link a{
+    font-size: clamp(1rem, 1.5rem, 3rem);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 4px;
+}
+
+.hero nav .ext-links .nav-link a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.hero .welcome-text{
+    display: block;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 1em;
+}
+
+.hero .welcome-text p{
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+}
