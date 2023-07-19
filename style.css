@@ -10,6 +10,7 @@ body{
     font-family: 'Josefin Sans', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
     display: flex;
     flex-direction: column;
+    background-color: #fff;
 }
 
 .hero{
@@ -24,7 +25,7 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
-    padding: 32px max(1em, 10vw);
+    padding: 32px max(1em, 10vw) 16px max(1em, 10vw);
     position: sticky;
     background-color: #0d0d0d;
     top: 0;
@@ -87,14 +88,16 @@ main .content-container{
     position: sticky;
     top: 5em;
     padding-right: 2em;
+    padding-left: 0.8em;
     border-right: 2px solid #0d0d0d;
+
 }
 .content-container .table-of-contents ul li{
     margin-bottom: 1em;
 }
 
 .content-container .table-of-contents ul li a{
-    font-size: 1.4rem;
+    font-size: clamp(0.8rem, 1.4rem, 2rem);
     font-weight: 600;
     text-decoration: none;
     color: #0d0d0d;
@@ -113,6 +116,8 @@ main .content-container{
     margin-bottom: 0.6rem;
     color: #0d0d0d;
     font-weight: 600;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #0d0d0d;
 }
 .content-container .content .content-item p{
     font-size: clamp(1.2rem, 1.4vw, 2rem);
@@ -159,16 +164,28 @@ footer .copyright{
     font-weight: 400;
 }
 
-@media(max-width:600px){
+@media(max-width:768px){
     main .content-container{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 5em;
     }
+
+    .hero nav .ext-links .nav-link{
+        display: none;
+    }
+    
     .content-container .table-of-contents ul{
         position: static;
         border-right: 0;
         border-bottom: 2px solid #0d0d0d;
+    }
+
+    footer .social-links{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
     }
 }
