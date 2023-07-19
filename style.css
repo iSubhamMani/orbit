@@ -25,6 +25,9 @@ body{
     justify-content: space-between;
     gap: 1.5rem;
     padding: 32px max(1em, 10vw);
+    position: sticky;
+    background-color: #0d0d0d;
+    top: 0;
 }
 
 .hero nav .ext-links{
@@ -81,7 +84,10 @@ main .content-container{
 .content-container .table-of-contents{
     flex: 1;
 }
-
+.content-container .table-of-contents ul{
+    position: sticky;
+    top: 5em;
+}
 .content-container .table-of-contents ul li{
     margin-bottom: 1em;
 }
@@ -109,4 +115,37 @@ main .content-container{
     font-weight: 400;
     color: #0d0d0d;
     line-height: 1.5;
+}
+
+footer{
+    background-color: #0d0d0d;
+    padding: 20px max(1em, 2vw);
+}
+
+footer .connect-text{
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+footer .social-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .social-links div a{
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+footer .copyright{
+    color: #fff;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1rem;
+    font-weight: 400;
 }
