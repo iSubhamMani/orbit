@@ -116,6 +116,7 @@ main .content-container{
     margin-bottom: 0.6rem;
     color: #0d0d0d;
     font-weight: 600;
+    padding-top: 0.6em;
     padding-bottom: 0.3em;
     border-bottom: 2px solid #0d0d0d;
 }
